@@ -1,0 +1,29 @@
+<div data-role="page" align="center" style="background:#e9e9e9;" id="tempTask091715">
+
+  <div data-role="header" data-position="fixed">
+
+       <div style="width:90%;" align="left"> 
+	 <h1 id="tempTaskNameH1"></h1>
+       </div>	 
+
+       <div style="margin-top:10px; margin-bottom:10px; background-color: #95bcf2; width: 90%; height: 25px; text-align: center; color: white;"></div>
+       
+  </div>
+
+  <div data-role="content" style="width:90%;">
+
+    <div id="statusDiv" style="height:200px; border: thin solid black;">
+      <p align="left" style="margin-left:5px; font-size:24px;" >Read Temp</p>
+      <p id="tmdTemp" align="left" style="margin-left:5px; font-size:24px;" ></p>
+    </div>
+
+    <button id="readTempFromTmdButton" style="background:#e9e9e9; border: thin solid black; float:right;width:50%"> READ TEMP FROM TMD</button>
+
+    <div style="margin-top:50px; float:left; width:100%">
+      <input style="background:#e9e9e9; border: thin solid black;" type="text" id="manualTempInput" placeholder="Type in a Temp To Send Manually"/>
+    </div>
+
+    <button onclick="sendTemp()" style="background:#e9e9e9; border: thin solid black; float:right;width:50%"> CLICK TO SEND TEMP</button>
+  </div>
+    
+</div>

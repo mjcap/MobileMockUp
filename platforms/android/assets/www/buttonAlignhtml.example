@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Buttons in between spans</title>
+    </head>
+    <body>
+        <span style="background: #f06; vertical-align: top;">Foo bar has left the building</span>
+        <span style="display: inline-block; width: 25%; height: auto; background: #06f;">
+            <button style="width: 100%;margin-bottom:20px;">Add</button>
+            <button style="width: 100%;">Remove</button>
+        </span>
+        <span  style="background: #0f0; vertical-align: top;">Bar hopping is what we do at Friday nights</span>
+    </body>
+</html>
+
+
+
+
+new html:
+
+        <span style="display: inline-block; width: 100%; height: auto; background: #06f;">
+            <button onclick="sendTemp()" style="background:#e9e9e9; border: thin solid black; float:right;width:50%"> CLICK TO SEND TEMP</button>
+            <button id="sendTempOkButton" style="background:#e9e9e9; border: thin solid black; float:right;width:50%"> Ok</button>
+        </span>
+
+
+old html that didn't line up properly:
+
+    <div style="width:100%:height:auto;background:green;">
+      <button onclick="sendTemp()" style="background:#e9e9e9; border: thin solid black; float:right;width:50%"> CLICK TO SEND TEMP</button>
+    </div>
+
+    <div style="width:100%:height:auto;background:blue;">
+      <button id="sendTempOkButton" style="background:#e9e9e9; border: thin solid black; float:right;width:50%"> Ok</button>
+    </div>  

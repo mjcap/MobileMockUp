@@ -1,0 +1,13 @@
+
+
+
+
+     <div data-role="header" data-position="fixed">
+          <div data-role="navbar" style="width:90%;">
+            <ul>
+              <li style="border: thin solid black;"><a href="#pag1" style="font-size:20px">One</a></li>
+              <li style="border-top: thin solid black; border-bottom: thin solid black"><a href="#page2" style="font-size:20px;">Two</a></li>
+              <li style="border: thin solid black;"><a href="#page3" style="font-size:20px;">Three</a></li>
+            </ul>
+          </div>	
+      </div>

@@ -1,0 +1,276 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+
+#footer  {
+    font-size:50px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:right;
+    height: 75px;
+}
+
+#footerOkButton {
+    font-size:25px;
+    font-weight:bold;
+    margin:0px 25px;
+    width:40%;
+}
+
+#taskListUL {
+    padding-left: 15px;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+.styledli {
+    white-space: normal !important;
+    background:#e9e9e9;
+}
+
+.styledliwithborder {
+    white-space: normal !important;
+    background:#e9e9e9;
+    border: thin solid black;
+    margin: 0;
+    padding: 0;
+}
+
+/*.styledp {
+    white-space: normal !important;
+    padding-top:5%;
+    border-top: thin solid black;
+    font-size:24px;
+    font-weight:normal;
+    color:#000000;
+}*/
+
+.wrappinganchor {
+    background: green;
+    /*background:#e9e9e9;*/
+    padding-top:5%;
+    border-top: thin solid black;
+    display:block;
+    font-size:24px;
+    font-weight:normal;
+    color:#000000;
+    text-decoration: none;
+    white-space: normal !important;
+}
+
+table {margin: 100px auto auto auto;}
+
+#startButton{
+    font-size:25px;
+    font-weight:bold;
+    width: 40%;
+    margin:0 auto;
+}
+
+#saveButton{
+    font-size:25px;
+    font-weight:bold;
+    width: 40%;
+    margin:0 auto;
+}
+
+#contentId{
+   background-color:#e9e9e9; 
+}
+
+.content{
+   background-color:#e9e9e9; 
+}
+
+.taskLineItem {
+    font-size:24px;
+    font-weight:normal;
+    font-color:#000000
+    /*background-color:#eeeeee;*/
+}
+
+.ui-content {
+    padding: 0 !important;
+}
+
+.ui-listview {
+    margin: 0 !important;
+}
+
+.example-wrapper, .example-wrapper div.iscroll-scroller {
+    width: 100% !important;
+    background: #e9e9e9;
+}
+
+.tableHeaderClass {
+    font-size:24px;
+}
+
+input[type="text"] {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 24px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+
+input[type="radio"]{
+  background-color:#e9e9e9;
+}
+
+.custom{
+    outline: none; !important
+    border-radius: 0px; !important
+    border: none; !important
+}
+
+.signInText {
+  display: block;
+  margin: 0;
+  width: 50%;
+  font-family: sans-serif;
+  font-size: 2px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;    
+}
+
+/*.ui-footer {
+        border-style: solid;
+        position: relative;
+}*/
+
+textarea.ui-input-text { height: inherit !important;
+		         width: inherit !important
+		       }
+
+
+.linkbutton {
+    background:none!important;
+     border:thin solid black; 
+     padding:0!important;
+    
+    /*optional*/
+     font-family:arial,sans-serif; /*input has OS specific font-family*/
+     font-size:24px;
+     color:#00000;
+     cursor:pointer;
+}
+
+/* hack for rightmost border on navbar */
+.ui-navbar ul li:last-child .ui-btn {
+    border-right-width: 1px;
+    border: thin solid black;
+}
+
+/* hack to make search bar half the screen width */
+.ui-input-search {
+ outline: 0;
+ width: 50%;
+ float:right;
+}
+
+/* hack to make page2 and 3 all gray */
+.grayPage {
+    padding: 0;
+    position: absolute !important; 
+    top : 40px !important;  
+    right : 0; 
+    bottom : 0px !important;  
+    left : 0 !important;
+    background: #e9e9e9;
+}
+
+.clipboardImg {
+    //padding: 0 20px;
+    margin: 0 20px;
+    background-color: #e9e9e9;
+    vertical-align: middle;
+}
+
+.questionMarkImg {
+    //padding: 0 20px;
+    margin: 0 20px;
+    background-color: #e9e9e9;
+    vertical-align: middle;
+}
+
+.checkName {
+    font-size:24px;
+    font-weight:normal;
+    vertical-align: middle;
+}
+
+.checkNameWithPadding {
+    font-size:24px;
+    font-weight:normal;
+    vertical-align: middle;
+}
+
+/*radio buton styling hack */
+#custom-fieldset div .ui-radio{
+    background: #e9e9e9 !important;
+    border: thin solid black;
+    margin-left:5px;
+    margin-right:5px;
+    
+}
+
+#custom-fieldset div .ui-radio .ui-radio-off{
+    background: #e9e9e9 !important;
+}
+
+#custom-fieldset div .ui-radio .ui-radio-on{
+    background: #95bcf2 !important
+}
+
+
+/* custom alert/confirm dialog */
+#dialogoverlay{
+	display: none;
+	opacity: .0;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: #FFF;
+	width: 100%;
+	z-index: 10;
+}
+#dialogbox{
+	display: none;
+	position: fixed; 
+	width:275px;
+        z-index: 10;
+        border: thin solid black;
+}
+#dialogbox > div{ background:#FFF; margin:0px; }
+#dialogbox > div > #dialogboxhead{ background: #95bcf2; font-size:30px; padding:10px; color:#000000; border-bottom:thin solid black}
+#dialogbox > div > #dialogboxbody{ background:#e9e9e9; padding:20px; color:#000000; font-size:24px;}
+#dialogbox > div > #dialogboxfoot{ background: #e9e9e9; padding:10px; text-align:center; font-size:24px; }

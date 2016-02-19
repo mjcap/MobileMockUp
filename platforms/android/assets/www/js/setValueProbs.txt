@@ -1,0 +1,66 @@
+
+SPX@setData returns:
+
+result={"status":"200",
+            "data":{
+	                "serviceStatus":"end",
+			"key":"@2274",
+			"step":"End",
+			"data":{
+			            "returnValue":null,
+				    "checks":{"selected":[],
+				                   "items":["check list 0","check list 1","check list 2","check list 3"],
+						   "@metadata":{
+						                          "objectID":"96b23ce1-d291-40d1-be0f-10898e742f99",
+									  "dirty":true,
+									  "shared":false
+									 }
+						  }
+				 },
+		         "actions":null
+			 }
+	    }
+
+SPX@setTemp returns:
+
+result={"status":"200",
+            "data":{
+	                "serviceStatus":"end",
+			"key":"@2278",
+			"step":"End",
+			"data":{
+			             "returnValue":"\"Re-temp product with Probe\",\"ruleExecuted\"",
+				     "checks":null
+				  },
+                         "actions":null
+			}
+		}
+
+
+SPX@setValue, key named val holding a boolean value:
+
+http://bpm.capbpm.com:9080/rest/bpm/wle/v1/service/SPX@setValue?action=start&params={"taskId":"2365","val":true}
+
+ajax error jqXHR=[{"readyState":4,"responseText":"{\"status\":\"error\",\"Data\":{\"status\":\"error\",\"exceptionType\":\"com.ibm.bpm.wle.api.ObjectDoesNotExistException\",\"errorNumber\":\"CWTBG0013E\",\"errorMessage\":\"CWTBG0013E: The object 'SPX@setValue' does not exist; it might have been deleted in the meantime.\",\"errorMessageParameters\":[\"SPX@setValue\"],\"responses\":null}}","responseJSON":{"status":"error","Data":{"status":"error","exceptionType":"com.ibm.bpm.wle.api.ObjectDoesNotExistException","errorNumber":"CWTBG0013E","errorMessage":"CWTBG0013E: The object 'SPX@setValue' does not exist; it might have been deleted in the meantime.","errorMessageParameters":["SPX@setValue"],"responses":null}},"status":404,"statusText":"Not Found"}]
+
+SPX@setValue, key named value holding a boolean value:
+
+http://bpm.capbpm.com:9080/rest/bpm/wle/v1/service/SPX@setValue?action=start&params={"taskId":"2365","value":true}
+
+ajax error jqXHR=[{"readyState":4,"responseText":"{\"status\":\"error\",\"Data\":{\"status\":\"error\",\"exceptionType\":\"com.ibm.bpm.wle.api.ObjectDoesNotExistException\",\"errorNumber\":\"CWTBG0013E\",\"errorMessage\":\"CWTBG0013E: The object 'SPX@setValue' does not exist; it might have been deleted in the meantime.\",\"errorMessageParameters\":[\"SPX@setValue\"],\"responses\":null}}","responseJSON":{"status":"error","Data":{"status":"error","exceptionType":"com.ibm.bpm.wle.api.ObjectDoesNotExistException","errorNumber":"CWTBG0013E","errorMessage":"CWTBG0013E: The object 'SPX@setValue' does not exist; it might have been deleted in the meantime.","errorMessageParameters":["SPX@setValue"],"responses":null}},"status":404,"statusText":"Not Found"}]
+
+SPX@setValue, key named val holding a string:
+
+http://bpm.capbpm.com:9080/rest/bpm/wle/v1/service/SPX@setValue?action=start&params={"taskId":"2365","val":"true"}
+
+ajax error jqXHR=[{"readyState":4,"responseText":"{\"status\":\"error\",\"Data\":{\"status\":\"error\",\"exceptionType\":\"com.ibm.bpm.wle.api.ObjectDoesNotExistException\",\"errorNumber\":\"CWTBG0013E\",\"errorMessage\":\"CWTBG0013E: The object 'SPX@setValue' does not exist; it might have been deleted in the meantime.\",\"errorMessageParameters\":[\"SPX@setValue\"],\"responses\":null}}","responseJSON":{"status":"error","Data":{"status":"error","exceptionType":"com.ibm.bpm.wle.api.ObjectDoesNotExistException","errorNumber":"CWTBG0013E","errorMessage":"CWTBG0013E: The object 'SPX@setValue' does not exist; it might have been deleted in the meantime.","errorMessageParameters":["SPX@setValue"],"responses":null}},"status":404,"statusText":"Not Found"}]
+
+SPX@setValue, key named value holding a string:
+
+http://bpm.capbpm.com:9080/rest/bpm/wle/v1/service/SPX@setValue?action=start&params={"taskId":"2365","value":"true"}
+
+ajax error jqXHR=[{"readyState":4,"responseText":"{\"status\":\"error\",\"Data\":{\"status\":\"error\",\"exceptionType\":\"com.ibm.bpm.wle.api.ObjectDoesNotExistException\",\"errorNumber\":\"CWTBG0013E\",\"errorMessage\":\"CWTBG0013E: The object 'SPX@setValue' does not exist; it might have been deleted in the meantime.\",\"errorMessageParameters\":[\"SPX@setValue\"],\"responses\":null}}","responseJSON":{"status":"error","Data":{"status":"error","exceptionType":"com.ibm.bpm.wle.api.ObjectDoesNotExistException","errorNumber":"CWTBG0013E","errorMessage":"CWTBG0013E: The object 'SPX@setValue' does not exist; it might have been deleted in the meantime.","errorMessageParameters":["SPX@setValue"],"responses":null}},"status":404,"statusText":"Not Found"}]
+
+
+
+

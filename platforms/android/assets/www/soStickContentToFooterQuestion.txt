@@ -1,0 +1,40 @@
+I have a page with fixed header and footer
+
+     <div data-role="page" align="center" id="index" style="background:#e9e9e9">
+    
+        <div data-role="header" data-position="fixed">
+        </div>
+      
+        <div data-role="content" align="left" style="width: 90%;background: #e9e9e9;">
+
+                 <div class="example-wrapper" data-iscroll data-iscroll='{"bounce":false}'>
+                     <ul id="myUL" data-role="listview">
+	             </ul>
+	         </div>
+             
+       </div>
+
+       <div data-role="footer" data-position="fixed" >
+       </div>
+
+     </div>
+
+example-wrapper is from http://www.gajotres.net/using-iscroll-with-jquery-mobile/ and the css is
+
+    .ui-content {
+        padding: 0 !important;
+    }
+
+    .ui-listview {
+        margin: 0 !important;
+    }
+
+    .example-wrapper, .example-wrapper div.iscroll-scroller {
+        width: 100% !important;
+    }
+
+I want to create the effect of the content being attached to the footer and growing upwards and still maintain scrolling.
+
+None of the references I find on the 'net say anything about doing this with jquery mobile.  they all seem to refer to straight html and break scrolling.
+
+Does anyone have any suggestions?

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.4.5.css" type="text/css"/>  
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Hello World</title>
+    </head>
+    <body>
+
+<div data-role="page" align="center" id="loginDivId">
+  
+    <div id="mainPageHeaderId" data-role="header" style="width: 90%; box-sizing: border-box; border: thin solid black; font-size:25px; font-weight:normal;margin-top:5%;overflow:visible;padding:0px;text-align:left;background-color: #95bcf2;height: 100%;">
+        <h1 style="font-size:25px;font-weight:bold;margin:25px 0px 25px 10px;overflow:visible;padding:0px;text-align:left;">Capital BPM</h1>
+    </div>
+
+    <div>
+                    <!--textarea id="deviceNameTextArea">No Device</textarea-->
+                    <TABLE border="0">
+                        <TR>
+                            <TD><div class="tableHeaderClass">Enter the Assigned User:</div><input type="text" id="assignedUser" value="Danny"></input></TD>
+			</TR>
+			<TR>  
+                            <TD><div class="tableHeaderClass">Enter the Assigned pass:</div><input type="text" id="pass" value="passw0rd"></input></TD>
+                        </TR>
+                        <TR>
+                            <TD><div class="tableHeaderClass">Enter the Assigned server:</div><input type="text" id="server" value="http://bpm.capbpm.com"></input></TD>
+                        </TR>
+                        <TR>
+		            <TD><div class="tableHeaderClass">Enter the Assigned port:</div><input type="text" id="port" value="9080"></input></TD>
+                        </TR>
+		    </TABLE>
+
+		    <button id="getTaskByUserButton">
+                        Get Task
+                    </button>  
+    </div>
+</div>
+    
+<div data-role="page" align="center" id="index">
+    
+    <div data-role="header" style="width: 90%; box-sizing: border-box;
+        border: thin solid black; font-size:25px; font-weight:normal;margin-top:5%;overflow:visible;padding:0px;text-align:left;background-color: #95bcf2;height: 100%;">
+        <h1 id="headerText" style="font-size:25px;font-weight:bold;margin:25px 0px 25px 10px;overflow:visible;padding:0px;text-align:left;">Index page</h1>
+    </div>
+    
+    <div data-role="content" align="left" style="width: 90%;" id="contentId" >
+       
+       <div id="taskListScrollableDiv" class="example-wrapper" data-iscroll='{"bounce":false}'>
+	      <ul id="taskListUL" style="background:#ffffff; padding:0; margin:0; border-left: thin solid black; border-right: thin solid black;"  data-role="listview">
+		 <!--div id="taskListLiDiv"></div-->
+	      </ul>
+       </div>
+       
+    </div>
+    
+    <div id="footer" style="background:#ffffff; width: 90%; border-top: thin solid black;" data-role="footer" style="border-style: none;">
+        <button style="border: thin solid black;" id="footerOkButton" type="button" >OK</button>
+    </div>    
+</div> 
+
+<div data-role="page" id="nonTempTask">
+         THIS IS A NON TEMPERATURE TAKING TASK!!!
+</div>
+
+<div data-role="page" id="tempTask">
+  <div id="tempTaskNameDiv">
+       <textarea id="tempTaskNameTextArea"></textarea>      
+  </div>
+  
+  <button id="readTempFromTmdButton"> READ TEMP FROM TMD</button>
+  Enter Manual Temp
+  <input type="text" id="manualTempInput"/>
+  <button onclick="sendTemp()"> SEND TEMP </button>
+</div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="jquery/jquery-1.11.1.js"></script>
+        <script type="text/javascript" src="jquery.mobile/jquery.mobile-1.4.5.js"></script>
+        <script type="text/javascript" src="iscroll420/iscroll.js"></script>
+        <script type="text/javascript" src="iscrollview/jquery.mobile.iscrollview.js"></script>
+        <script type="text/javascript" src="js/jquery.xdomainrequest.min.js"></script>        
+        <script type="text/javascript" src="js/config.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

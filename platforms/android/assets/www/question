@@ -1,0 +1,63 @@
+    <div data-role="page" align="center" id="loginDivId">
+  
+        <div id="mainPageHeaderId" data-role="header" style="">
+            <h1 style="">Capital BPM</h1>
+        </div>
+
+        <div>  
+        </div>
+    
+    </div>
+
+
+this scrolls:
+
+    <div data-role="page" align="center" id="index">
+    
+        <div data-role="header" style=""><h1 style="">Index page</h1></div>
+    
+        <div data-role="content" align="left" style="" id="contentId" >
+       
+           <div id="myScrollableDiv" class="example-wrapper" data-iscroll='{"bounce":false}'>
+	          <ul id="myUL" style=""  data-role="listview"></ul>
+           </div>
+       
+        </div>
+    
+        <div id="footer" style="" data-role="footer" >
+            <button style="" id="footerOkButton" type="button" >OK</button>
+        </div>    
+    </div>
+
+this does not:
+
+    <div data-role="tabs" id="tabs" style="display:none;">
+          <div data-role="navbar">
+            <ul>
+               <li><a href="#tabs-1">Tab 1</a></li>
+               <li><a href="#tabs-2">Tab 2</a></li>
+               <li><a href="#tabs-3">Tab 3</a></li>
+            </ul>
+          </div>
+     
+          <div align="center" id="index" class="ui-content">
+             A text area: <textarea id="myTextArea"></textarea></br>
+             Some text<br>
+            <div data-role="content" align="left" style="" id="contentId" >
+       
+               <div id="myScrollableDiv" class="example-wrapper" data-iscroll='{"bounce":false}'>
+	            <ul id="myUL" style=""  data-role="listview">
+	            </ul>
+               </div>
+       
+            </div>
+          </div>
+      
+          <div id="tabs-2" class="ui-content">
+             <p>tab 2</p>
+          </div>
+      
+          <div id="tabs-3" class="ui-content">
+             <p>tab 3</p>
+          </div>
+     </div>

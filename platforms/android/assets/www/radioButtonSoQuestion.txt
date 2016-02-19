@@ -1,0 +1,48 @@
+Hello
+
+I have the following html defining a radio button group:
+
+
+      <fieldset data-role="controlgroup" data-type="horizontal" id="custom-fieldset" data-corners="false" >
+     	<input type="radio" name="radio-choice" id="radio-choice-yes" value="choice-yes" />
+     	<label for="radio-choice-yes">Yes</label>
+
+     	<input type="radio" name="radio-choice" id="radio-choice-no" value="choice-no"  />
+     	<label for="radio-choice-no">No&nbsp</label>
+      </fieldset>
+
+      /*radio buton styling hack */ 
+      #custom-fieldset div .ui-radio{
+           background: #e9e9e9 !important;
+           border: thin solid black;
+           margin-left:5px;
+           margin-right:5px;
+       }
+
+and here's the associated css:
+
+      #custom-fieldset div .ui-radio .ui-radio-off{
+          background: #e9e9e9 !important;
+      }
+
+     #custom-fieldset div .ui-radio .ui-radio-on{
+         background: #95bcf2 !important
+     }
+
+When I display this page for the first time, neither radio button is selected.
+
+If I select a radio button, leave the page and come back I find that the previously selected button is still selected.
+
+I'd like to return it to the neither button is selected state.
+
+So far, on pageshow I've tried
+
+	    $('input[name="radio-choice"]').prop('checked', false);
+
+and
+
+	    $('input[name="radio-choice"]').removeAttr("checked");
+
+but neither of them has worked.
+
+Does anyone have any suggestions?
